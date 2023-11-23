@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap');
+
+body {
+    font-family: 'Permanent Marker', sans-serif;
+    background-color:  #5f5f5f;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 20px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 50px;
+    margin-top: 120px;
+}
+
+main div {
+    margin: 2rem;
+    padding: 3.5rem;
+    animation: spiegamento 4s 1s 
+}
+
+
+
+main div:first-child{
+    background-color: #FFFF66;
+   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82);
+    transform: rotate(-15deg);
+}
+
+main div:nth-child(2){
+    background-color: #d4fbf1;
+   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82);
+    transform: rotate( 17deg);
+}
+
+main div:nth-child(3){
+    background-color: #ffae69;
+   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82);
+    transform: rotate(-12deg);
+}
+
+main div:nth-child(4){
+    background-color: #3065ac;
+   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82);
+    transform: rotate(19deg);
+}
+
+main div:nth-child(5){
+    background-color: #cb99c9;
+   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82);
+    transform: rotate(-14deg);
+}
+
+main div:nth-child(6){
+    background-color: #ff6961;
+   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82);
+    transform: rotate(18deg);
+}
+
+main div:nth-child(7){
+    background-color: #77dd77;
+   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82);
+    transform: rotate(-21deg);
+}
+
+main div:nth-child(8){
+    background-color: #51d1f6;
+   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.82);
+    transform: rotate(23deg);
+}
+
+
+main div:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    z-index: 2;
+} 
+
+main div:hover h1,
+main div:hover p{
+    text-decoration: underline white;
+}
+
+@keyframes spiegamento {
+    from { transform: translate(-100vh, -50vw);
+    }
+    
+}
